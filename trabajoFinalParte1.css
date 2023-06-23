@@ -5,17 +5,22 @@ p {
   color: rgb(100, 100, 100);
 }
 
+body {
+  padding-bottom: 1000px;
+}
+
 .articulos-preview {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .contenedor-imagen {
-  text-align: center;
+  
 }
 
 .imagen-preview {
-
+  width: 100%;
 }
 
 .articulos-info {
@@ -44,7 +49,7 @@ p {
 
 .articulos-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 20px;
   row-gap: 40px;
   margin: 0 80px;
