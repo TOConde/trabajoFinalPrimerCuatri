@@ -1,8 +1,51 @@
 p {
   font-family: Roboto, Arial;
-  font-weight: 700;
+  font-weight: 900;
+  margin: 0;
+  color: rgb(100, 100, 100);
+}
+
+.articulos-preview {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-imagen {
+  text-align: center;
+}
+
+.imagen-preview {
+
+}
+
+.articulos-info {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.articulo-precio {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;  
+}
+
+.articulo-nombre {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
 }
 
 .articulo-descripcion {
   font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+
+.articulos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+  margin: 0 80px;
 }
