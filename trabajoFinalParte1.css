@@ -7,7 +7,52 @@ p {
 
 body {
   padding-bottom: 1000px;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(235, 235, 235);
+}
+
+.menu{
+  height: 60px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.seccion-izq {
+  margin-left: 15px;
+  margin-right: 15px;  
+}
+
+.seccion-izq div {
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.home-icon {
+  height: 36px;
+}
+
+.seccion-mid {
+  display: flex;
+}
+
+.bar-link {
+  font-family: Roboto, Arial;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: white;
+  border: 1px solid black;
+  padding: 14px 16px 14px 16px;
+}
+
+.bar-link:hover {
+  background-color: rgb(235, 235, 235);
 }
 
 .articulos-preview {

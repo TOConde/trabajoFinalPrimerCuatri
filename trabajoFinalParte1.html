@@ -14,14 +14,26 @@
 </head>
 
 <body>
-  <nav>
-
+  <nav class="menu">
+    <div class="seccion-izq">
+      <img class="home-icon" src="imagenes/home.svg" alt="">
+      <div>Home</div>
+    </div>
+    <div class="seccion-mid">
+      <a href="#heladeras">
+        <button class="bar-link">Heladeras</button>
+      </a>
+      <a href="#televisores">
+        <button class="bar-link">Televisores</button>
+      </a>
+      <a href="#suscribirse">
+        <button class="bar-link">Suscribirse</button>
+      </a>      
+    </div>
+    <div class="seccion-der"></div>
   </nav>
 
-  <div>
-    <p>heladeras</p>
-  </div>
-  <section class="articulos-grid">
+  <section id="heladeras" class="articulos-grid">
     <div class="articulos-preview">
       <div class="contenedor-imagen">
         <img class="imagen-preview" src="imagenes/heladera1.png" alt="">
@@ -89,10 +101,7 @@
     </div>
   </section>
 
-  <div>
-    <p>televisores</p>
-  </div>
-  <section class="articulos-grid teles">
+  <section id="televisores" class="articulos-grid teles">
     <div class="articulos-preview">
       <div class="contenedor-imagen">
         <img class="imagen-preview" src="imagenes/tele1.png" alt="">
