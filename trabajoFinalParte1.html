@@ -15,10 +15,12 @@
 
 <body>
   <nav class="menu">
-    <div class="seccion-izq">
-      <img class="home-icon" src="imagenes/home.svg" alt="">
-      <div>Home</div>
-    </div>
+    <a class="home" href="">
+      <div class="seccion-izq">
+        <img class="home-icon" src="imagenes/home.svg" alt="">
+        <div>Home</div>
+      </div>
+    </a>    
     <div class="seccion-mid">
       <a href="#heladeras">
         <button class="bar-link">Heladeras</button>
@@ -32,6 +34,12 @@
     </div>
     <div class="seccion-der"></div>
   </nav>
+
+  <header>
+    <div class="header">
+      <p>Nuevos articulos</p>
+    </div>
+  </header>
 
   <section id="heladeras" class="articulos-grid">
     <div class="articulos-preview">
@@ -156,6 +164,42 @@
         <p class="articulo-descripcion">40 Full Hd Android Tv</p>
       </div>
     </div>
+  </section>
+
+  <section id="suscribirse" class="suscribirse">
+    <div>
+      <p>Para recibir actualizaciones de nuestros productos dejanos tus datos</p>
+    </div>
+
+    <form>
+      <div class="mb-3">
+        <label for="nombreApellido" class="form-label">Nombre y Apellido</label>
+        <input type="text" class="form-control" id="nombreApellido">
+      </div>
+      <div class="mb-3">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Nunca compartiremos tu email.</div>
+      </div>      
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="number" class="form-control" id="telefono">
+      </div>
+      <div class="mb-3">
+        <label for="edad" class="form-label">Edad</label>
+        <input type="number" class="form-control" id="edad">
+      </div>
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="categoria-select">Categoría</label>
+        <select class="form-select" id="categoria-select">
+          <option selected>Elije una opcion...</option>
+          <option value="1">Heladeras</option>
+          <option value="2">Televisores</option>
+          <option value="3">Todas</option>
+        </select>
+      </div>
+    </form>
+    <button class="btn btn-primary">Enviar</button>
   </section>
   
 </body>

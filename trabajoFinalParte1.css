@@ -6,7 +6,7 @@ p {
 }
 
 body {
-  padding-bottom: 1000px;
+  padding-top: 70px;
   background-color: rgb(235, 235, 235);
 }
 
@@ -24,14 +24,24 @@ body {
 }
 
 .seccion-izq {
-  margin-left: 15px;
-  margin-right: 15px;  
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.seccion-izq:hover {
+  cursor: pointer;
+  background-color: rgb(220, 220, 220);
 }
 
 .seccion-izq div {
   font-family: Roboto, Arial;
   font-size: 14px;
   font-weight: 700;
+}
+
+.home {
+  text-decoration: none;
+  color: black;
 }
 
 .home-icon {
@@ -47,20 +57,25 @@ body {
   font-size: 18px;
   font-weight: 700;
   background-color: white;
-  border: 1px solid black;
+  border: none;
   padding: 14px 16px 14px 16px;
 }
 
 .bar-link:hover {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(220, 220, 220);
 }
 
-.articulos-preview {
-  
+.header {
+  font-family: Roboto, Arial;
+  font-size: 46px;
+  text-align: center;
+
+  height: 200px;
 }
 
-.contenedor-imagen {
-  
+.header p {
+  margin-top: 50px;
+  color: black;
 }
 
 .imagen-preview {
@@ -99,4 +114,14 @@ body {
   margin: 0 80px;
   align-items: end;
   justify-items: center;
+}
+
+.suscribirse div p {
+  font-family: Roboto, Arial;
+  font-weight: 900;
+  color: black;
+}
+
+.suscribirse {
+  margin: 100px;  
 }
