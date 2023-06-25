@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-  <script src="trabajoFinalParte1.js"></script>
   <link rel="stylesheet" href="trabajoFinalParte1.css">
+  <script src="trabajoFinalParte1.js"></script>
 </head>
 
 <body>
@@ -174,32 +174,32 @@
     <form>
       <div class="mb-3">
         <label for="nombreApellido" class="form-label">Nombre y Apellido</label>
-        <input type="text" class="form-control" id="nombreApellido">
+        <input id="inputNombre" type="text" class="form-control" id="nombreApellido">
       </div>
       <div class="mb-3">
         <label for="inputEmail" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+        <input id="inputEmail" type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
         <div id="emailHelp" class="form-text">Nunca compartiremos tu email.</div>
       </div>      
       <div class="mb-3">
         <label for="telefono" class="form-label">Teléfono</label>
-        <input type="number" class="form-control" id="telefono">
+        <input id="inputTelefono" type="number" class="form-control" id="telefono">
       </div>
       <div class="mb-3">
         <label for="edad" class="form-label">Edad</label>
-        <input type="number" class="form-control" id="edad">
+        <input id="inputEdad" type="number" class="form-control" id="edad">
       </div>
       <div class="input-group mb-3">
         <label class="input-group-text" for="categoria-select">Categoría</label>
-        <select class="form-select" id="categoria-select">
+        <select id="inputCategoria" class="form-select" id="categoria-select">
           <option selected>Elije una opcion...</option>
-          <option value="1">Heladeras</option>
-          <option value="2">Televisores</option>
-          <option value="3">Todas</option>
+          <option value="Heladeras">Heladeras</option>
+          <option value="Televisores">Televisores</option>
+          <option value="Todas">Todas</option>
         </select>
       </div>
     </form>
-    <button class="btn btn-primary">Enviar</button>
+    <button id="btnEnviar" class="btn btn-primary">Enviar</button>
   </section>
   
 </body>
