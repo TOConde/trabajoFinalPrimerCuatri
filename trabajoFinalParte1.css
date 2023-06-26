@@ -6,16 +6,16 @@ p {
 }
 
 body {
-  padding-top: 70px;
+  padding-top: 90px;
   background-color: rgb(235, 235, 235);
 }
 
 .menu{
   height: 60px;
+  padding-left: 55px;
   background-color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   position: fixed;
   top: 0;
@@ -71,11 +71,26 @@ body {
   text-align: center;
 
   height: 200px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(imagenes/background.png);
+  background-repeat: space;
+  background-position: center;
+  background-size: contain;
+
+  border-bottom: groove;
 }
 
 .header p {
-  margin-top: 50px;
   color: black;
+  background-color: rgb(235, 235, 235);
+  border-radius: 4px;
+  padding: 0 12px 0 12px;
+  box-shadow: 2px 2px 2px 0px black
 }
 
 .imagen-preview {
