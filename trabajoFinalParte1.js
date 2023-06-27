@@ -8,6 +8,8 @@ const inputCategoria = document.getElementById("inputCategoria");
 const btnEnviar = document.getElementById("btnEnviar");
 btnEnviar.addEventListener('click', enviarForm);
 
+const regexEmail = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+
 function enviarForm() {
   imprimirEnConsola();
 }
@@ -18,9 +20,10 @@ function imprimirEnConsola() {
   const telefono = inputTelefono.value;
   const edad = inputEdad.value;
   const categoria = inputCategoria.value;
-   
-  let error = validarDatos(nombre,edad,categoria);
+
+  let error = validarDatos(nombre, email, telefono, edad, categoria);
   if (error) {
+    console.clear();
     console.log(error);
     return
   }
@@ -33,9 +36,18 @@ function imprimirEnConsola() {
   console.log("Categoría:", categoria);
 }
 
-function validarDatos(nombre,edad,categoria) {
+function validarDatos(nombre, email, telefono, edad, categoria) {
   if (!nombre) {
     return "El campo nombre no debe estar vacío"
+  }
+  if (!email) {
+    return "El campo email no debe estar vacío"
+  }
+  if (!regexEmail.test(email)) {
+    return "Ingrese un email valido"
+  }  
+  if (!telefono) {
+    return "El campo teléfono no debe estar vacío"
   }
   if (!edad) {
     return "El campo edad no debe estar vacío"
