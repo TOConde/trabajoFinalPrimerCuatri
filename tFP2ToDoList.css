@@ -1,3 +1,72 @@
 body {
-  background-color: bisque;
+  background-image: url(imagenes/imgParte2/notePad.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+h1 {
+  font-family: Dancing Script, cursive;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedorTarea {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.tarea {
+  display: flex;
+  width: 50%;
+  background-color: transparent;
+}
+
+.check {
+ width: 15px;
+ height: 15px;
+}
+
+.delete {
+  height: 30px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 6px;
+  border: none;
+}
+
+.delete:hover {
+  cursor: pointer;
+  background-color: rgb(200, 0, 0);
+}
+
+.deleteIcon {
+  height: 20px;
+  justify-content: center;
+}
+
+.btnAgregarQuitar {
+  display: flex;
+  justify-content: center;
+}
+
+.boton {
+ margin: 15px 20px;
+ padding: 10px 15px;
+ border: solid 2px;
+ border-radius: 6px;
+
+ font-weight: 900;
+
+ background-color: rgb(100, 150, 240);
+}
+
+.boton:hover {
+  cursor: pointer;
 }

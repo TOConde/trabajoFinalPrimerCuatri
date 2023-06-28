@@ -1,22 +1,17 @@
 const btnAgregar = document.getElementById("btnAgregar");
 const btnBorrar = document.getElementById("btnBorrar");
-const btnDeleteTarea = document.getElementById("btnDeleteTarea");
+
+let contador = 1;
 
 const contenedor = document.getElementById("contenedor");
 
 btnAgregar.addEventListener('click', agregarTarea);
-btnBorrar.addEventListener('click', borrarUnaTarea);
-btnDeleteTarea.addEventListener('click', borrarTodo);
-
-let contador = 1;
-
-function click() {
-  console.log("Click")
-}
+btnBorrar.addEventListener('click', borrarTodo);
 
 function agregarTarea() {
   const div = document.createElement("div");
-  div.className = "contenedorTarea";
+  div.setAttribute("id", "contenedorTarea" + contador);
+  div.setAttribute("class", "contenedorTarea")
 
   const input = document.createElement("input");
   input.setAttribute("id", "tarea" + contador);
@@ -29,9 +24,16 @@ function agregarTarea() {
   inputCheck.setAttribute("type", "checkbox");
 
   const borrar = document.createElement("button");
-  borrar.innerHTML = "Borrar";
+  const imagenIcono = document.createElement("img");
+  imagenIcono.setAttribute("class", "deleteIcon");
+  imagenIcono.setAttribute("src", "imagenes/imgParte2/deleteIcon.png")
+  borrar.appendChild(imagenIcono);
   borrar.setAttribute("id", "btnDeleteTarea" + contador);
   borrar.setAttribute("class", "delete");
+
+  borrar.addEventListener("click", function() {
+    borrarUnaTarea(div);
+  })
 
   div.appendChild(input);
   div.appendChild(inputCheck);
@@ -41,12 +43,12 @@ function agregarTarea() {
   contador += 1;
 }
 
-function borrarUnaTarea() {
-  contenedor.innerHTML = '';
+function borrarUnaTarea(tarea) {
+  tarea.remove();
 }
 
 function borrarTodo() {
-
+  contenedor.innerHTML = '';
 }
 
 function checkear() {
