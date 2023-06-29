@@ -1,7 +1,8 @@
 body {
   background-image: url(imagenes/imgParte2/notePad.jpg);
   background-repeat: no-repeat;
-  background-size: cover;  
+  background-size: cover;
+  background-color: rgb(251, 236, 171)
 }
 
 h1 {
@@ -24,19 +25,33 @@ h1 {
 }
 
 .tarea {
-  display: flex;
-  width: 50%;
-  background-color: transparent;
+  height: 28px;
+  width: 50vw;
+  background-color: rgb(251, 236, 171);
+
+  border-radius: 4px;
+  border: 2px solid rgb(40, 100, 230);
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.tarea:focus {
+  outline: none;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.5);
 }
 
 .check {
- width: 15px;
- height: 15px;
+  margin: 0 16px 0 16px;
+  width: 18px;
+  height: 18px;
 }
 
 .delete {
   height: 30px;
   background-color: rgb(255, 0, 0);
+  transition: background-color 0.3s ease;
+
   border-radius: 6px;
   border: none;
 }
@@ -57,16 +72,18 @@ h1 {
 }
 
 .boton {
- margin: 15px 20px;
- padding: 10px 15px;
- border: solid 2px;
- border-radius: 6px;
+  margin: 15px 20px;
+  padding: 10px 15px;
+  border: solid 2px;
+  border-radius: 6px;
 
- font-weight: 900;
+  font-weight: 900;
 
- background-color: rgb(100, 150, 240);
+  background-color: rgb(100, 150, 240);
+  transition: background-color 0.3s ease;
 }
 
 .boton:hover {
   cursor: pointer;
+  background-color: rgb(152, 200, 255);
 }
