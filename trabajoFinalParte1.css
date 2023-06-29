@@ -20,6 +20,8 @@ body {
   top: 0;
   left: 0;
   right: 0;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .seccion-izq {
@@ -66,7 +68,7 @@ body {
 
 header {
   padding: 90px 0 0 0;
-  background-color: rgb(185, 185, 185);
+  background-color: rgb(170, 170, 170);
 }
 
 .header {
@@ -131,9 +133,13 @@ header {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 20px;
   row-gap: 40px;
-  margin: 0 80px 60px;
+  padding: 0 80px 60px;
   align-items: end;
   justify-items: center;
+}
+
+.teles {
+  background-image: linear-gradient(to bottom, #EBEBEB 0%, #aaaaaa 100%);
 }
 
 .suscribirse div p {
@@ -162,7 +168,7 @@ header {
 }
 
 .suscribirse {
-  background-color: rgb(185, 185, 185);
+  background-color: rgb(170, 170, 170);
   padding: 60px 100px 100px 100px;  
 }
 
