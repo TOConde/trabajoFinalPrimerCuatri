@@ -10,6 +10,7 @@ h1 {
   font-size: 80px;
   display: flex;
   justify-content: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 .contenedor {
@@ -30,6 +31,7 @@ h1 {
   background-color: rgb(251, 236, 171);
 
   border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 2px 2px 8px 0px;
   border: 2px solid rgb(40, 100, 230);
   font-family: monospace;
   font-weight: 600;
@@ -53,6 +55,7 @@ h1 {
   transition: background-color 0.3s ease;
 
   border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 2px 2px 8px 0px;
   border: none;
 }
 
@@ -80,6 +83,7 @@ h1 {
   font-weight: 900;
 
   background-color: rgb(100, 150, 240);
+  box-shadow: rgba(0, 0, 0, 0.35) 2px 2px 8px 0px;
   transition: background-color 0.3s ease;
 }
 
