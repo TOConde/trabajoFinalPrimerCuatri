@@ -8,7 +8,9 @@ const inputCategoria = document.getElementById("inputCategoria");
 const btnEnviar = document.getElementById("btnEnviar");
 btnEnviar.addEventListener('click', enviarForm);
 
-const regexEmail = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+const regexNombre = /^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+$/; // letras mayusculas, minusculas y espacios y tildes
+const regexEmail = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/; //mail del tipo string@string.string
+const regexTelefono = /^\d+$/; //solo numeros
 
 function enviarForm() {
   imprimirEnConsola();
@@ -40,6 +42,9 @@ function validarDatos(nombre, email, telefono, edad, categoria) {
   if (!nombre) {
     return "El campo nombre no debe estar vacío"
   }
+  if (!regexNombre.test(nombre)) {
+    return "Ingrese nombre sin números ni caracteres"
+  }
   if (!email) {
     return "El campo email no debe estar vacío"
   }
@@ -48,6 +53,9 @@ function validarDatos(nombre, email, telefono, edad, categoria) {
   }  
   if (!telefono) {
     return "El campo teléfono no debe estar vacío"
+  }
+  if (!regexTelefono.test(telefono)) {
+    return "Ingrese un teléfono valido, solo números"
   }
   if (!edad) {
     return "El campo edad no debe estar vacío"
