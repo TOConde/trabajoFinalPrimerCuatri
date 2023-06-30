@@ -91,3 +91,7 @@ h1 {
   cursor: pointer;
   background-color: rgb(152, 200, 255);
 }
+
+div.btnAgregarQuitar button#btnBorrar:hover {
+  background-color: rgb(200, 0, 0);
+}

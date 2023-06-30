@@ -62,11 +62,11 @@ function cambiarEstilo(inputCheck) {
   const input = document.getElementById(inputCheck.getAttribute("for"));
   if (inputCheck.checked) {
     input.style.textDecoration = "line-through";
-    input.style.color = "grey"
+    input.style.backgroundColor = "#bfbebe"
     input.disabled = true;
   } else {
     input.style.textDecoration = "";
-    input.style.color = "";
+    input.style.backgroundColor = "";
     input.disabled = false;
   }
 }
